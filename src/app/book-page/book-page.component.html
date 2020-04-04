@@ -1,0 +1,35 @@
+
+
+<body>
+
+	<div class = "container">
+
+
+
+
+		<div class = "container">
+
+      <h2 class="col-12 container">Now book your shooting!</h2>
+
+      <div  class="container row d-flex justify-content-around mb-5 mt-5 mx-auto">
+        <div class=" col-10 col-sm-5 col-md-3 col-lg-2 boxShadow text-center p-2 m-2" *ngFor="let shoot of shootings">
+          <h5 class="ourTitle">{{shoot.title}}</h5>
+          <p>{{shoot.price}} € </p>
+          <button class="ourTitle btn btn-light" (click)="cartService.addToCart(shoot)">Book now</button>
+        </div>
+
+      </div>
+
+      <app-cart></app-cart>
+
+		</div>
+
+
+
+
+
+	</div>
+
+
+
+</body>

@@ -1,0 +1,42 @@
+<div class="container">
+
+	<!-- Text -->
+
+	<br><br>
+	<h2 class="">Our Photo Studio</h2>
+	<h4 class="text-justify">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<a routerLink="/galery">Wedding</a>,
+		<a routerLink="/galery">People</a>,
+		<a routerLink="/galery">Nature</a>,
+		<a routerLink="/galery">Cities</a>.
+	</h4>
+
+<h2 class="col-12 container">Then discover our best shoots!</h2>
+
+<div class="container-fluid  d-flex justify-content-center boxShadow" id="papaDiv">
+<div class="row d-flex justify-content-center ">
+  <div id="div1" class="col-5 m-0 p-0 d-flex justify-content-center">
+    <img src="/assets/img/Resized1-1/RESIZED0.jpg" class="img-fluid"alt="photo" title="click" (click)="zoomPic($event)">
+  </div>
+
+  <div id="div2" class="col-5 m-0 p-0 d-flex justify-content-center">
+    <img src="/assets/img/Resized1-1/RESIZED1.jpg" class="img-fluid"alt="photo" title="click" (click)="zoomPic($event)">
+  </div>
+  <div id="div3" class="col-5 m-0 p-0 d-flex justify-content-center">
+    <img src="/assets/img/Resized1-1/RESIZED2.jpg" class="img-fluid"alt="photo" title="click" (click)="zoomPic($event)">
+  </div>
+  <div id="div4" class="col-5 m-0 p-0 d-flex justify-content-center">
+    <img src="/assets/img/Resized1-1/RESIZED3.jpg" class="img-fluid"alt="photo" title="click" (click)="zoomPic($event)">
+  </div>
+
+  <div id="zoomedPic" (click)="hideZoom()" class="">
+  </div>
+</div>
+
+</div>

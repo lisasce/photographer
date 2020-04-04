@@ -1,0 +1,39 @@
+<!-- navbar -->
+
+<nav id="nav" class="navbar fixed-top navbar-expand-lg navbar-light bg-white" >
+  <div class="navbar-brand d-flex justify-content-start">
+    <a routerLink="/">
+      <img id="logo" src="../../assets/img/logo.png" alt="logo">
+    </a>
+    <h5 id="logoText" class="ourTitle text-body p-2">The Photographer</h5>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse " id="navbarNav">
+    <ul class="navbar-nav ">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/"><h5 class="text-body">Home</h5><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" routerLink="/portfolio"><h5 class="text-body">Portfolio</h5></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" routerLink="/about"><h5 class="text-body">Book</h5></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" routerLink="/contact"><h5 class="text-body">Contact</h5></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="swiper1-container">
+  <div class="swiper-wrapper">
+    <div id="banner" class="swiper-slide container-fluid d-flex justify-content-center m-0 p-0" *ngFor="let banner of banners">
+      <img width="100%"  [src]='"../../assets/img/Banner/banner"+banner+".jpg"' alt="">
+    </div>
+  </div>
+</div>
+

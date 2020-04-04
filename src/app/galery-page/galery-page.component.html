@@ -1,0 +1,75 @@
+<h2 class="col-12 container text-center ">A Quick overview first...</h2>
+
+<div class="dropright d-flex justify-content-start m-2">
+  <button type="button" id="droprightBtn" class="btn btn-light dropdown-toggle ourTitle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	Choose your Category
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item ourTitle selectItem"  value="all" (click)="categorySelect($event)" >All</a>
+    <a class="dropdown-item ourTitle selectItem"  value="nature" (click)="categorySelect($event)" >Nature</a>
+    <a class="dropdown-item ourTitle selectItem" value="people" (click)="categorySelect($event)">People</a>
+    <a class="dropdown-item ourTitle selectItem" value="wedding" (click)="categorySelect($event)">Wedding</a>
+    <a class="dropdown-item ourTitle selectItem" value="cities" (click)="categorySelect($event)">Cities</a>
+  </div>
+</div>
+
+<div class="container mx-auto d-flex row justify-content-around">
+
+
+
+ <div class="swiper-container swiper2-container" value="nature">
+    <div class="swiper-wrapper">
+      <div *ngFor="let i of iArray" class="swiper-slide shootingBox" style="background-image:url('/assets/img/Nature/nature{{ i }}.jpg')">
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+ <div class="swiper-container swiper2-container" value="people">
+    <div class="swiper-wrapper">
+      <div *ngFor="let i of iArray" class="swiper-slide shootingBox" style="background-image:url('/assets/img/People/people{{ i }}.jpg')"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+ <div class="swiper-container swiper2-container" value="wedding">
+    <div class="swiper-wrapper">
+      <div *ngFor="let i of iArray" class="swiper-slide shootingBox" style="background-image:url('/assets/img/Wedding/wedding{{ i }}.jpg')"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+ <div class="swiper-container swiper2-container" value="cities">
+    <div class="swiper-wrapper">
+      <div *ngFor="let i of iArray" class="swiper-slide shootingBox" style="background-image:url('/assets/img/Cities/city{{ i }}.jpg')"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+
+<h2 class="col-12 container">Here some more pictures....</h2>
+
+<div class="container  boxShadow" >
+
+  <div class="swiper-container swiper-container2  gallery-top">
+    <div class="swiper-wrapper">
+      <div *ngFor="let i of iArray2" class="col-12 swiper-slide swiper-slide2" style="background-image:url('/assets/img/Nature/nature{{ i }}.jpg')"></div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div>
+  <div class="swiper-container swiper-container3  gallery-thumbs">
+    <div class="swiper-wrapper">
+      <div *ngFor="let i of iArray2" class="swiper-slide swiper-slide2 " style="background-image:url('/assets/img/Nature/nature{{ i }}.jpg')"></div>
+
+    </div>
+  </div>
+
+
+</div>
