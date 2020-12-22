@@ -7,7 +7,7 @@
 		<div class="divBox col-md-5 col-xs-11 m-2 mb-3 row " *ngFor="let title of titles; index as i">
 		    <a routerLink="/galery">
 		    	<div class="thumbnail text-center col-12">
-			        <img [src]='"/assets/img/Resized1-1/RESIZED"+i+".jpg"' alt="" class="pictures img-fluid">
+			        <img [src]='"assets/img/Resized1-1/RESIZED"+i+".jpg"' alt="" class="pictures img-fluid">
 			        <div class="caption">
 			            <h1>{{title}}</h1>
 			        </div>

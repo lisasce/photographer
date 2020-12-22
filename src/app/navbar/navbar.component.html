@@ -3,7 +3,7 @@
 <nav id="nav" class="navbar fixed-top navbar-expand-lg navbar-light bg-white" >
   <div class="navbar-brand d-flex justify-content-start">
     <a routerLink="/">
-      <img id="logo" src="/assets/img/logo.png" alt="logo">
+      <img id="logo" src="assets/img/logo.png" alt="logo">
     </a>
     <h5 id="logoText" class="ourTitle text-body p-2">The Photographer</h5>
   </div>
@@ -32,7 +32,7 @@
 <div class="swiper1-container">
   <div class="swiper-wrapper">
     <div id="banner" class="swiper-slide container-fluid d-flex justify-content-center m-0 p-0" *ngFor="let banner of banners">
-      <img width="100%"  [src]='"/assets/img/Banner/banner"+banner+".jpg"' alt="">
+      <img width="100%"  [src]='"assets/img/Banner/banner"+banner+".jpg"' alt="">
     </div>
   </div>
 </div>
